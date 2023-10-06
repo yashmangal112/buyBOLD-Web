@@ -50,22 +50,21 @@ function Footer() {
 
       <div className="flex justify-center mt-4">
             <div className="flex space-x-4">
-              <a href="https://github.com/yashmangal112" target="_blank">
+              <a href="https://github.com/yashmangal112">
                 <BsInstagram className="w-18 h-8 hover:opacity-100 hover:transform- none animate-bounce " />
               </a>
               <a
                 href="https://www.linkedin.com/in/yashmangal112/"
-                target="_blank"
               >
                 <BsInstagram className="w-18 h-8 hover:opacity-100 hover:transform- none animate-bounce " />
               </a>
               <a
                 href="https://www.instagram.com/yash_mangal_112/"
-                target="_blank"
+                // target="_blank"
               >
                 <BsInstagram className="w-18 h-8 hover:opacity-100 hover:transform- none animate-bounce " />
               </a>
-              <a href="https://yashmangal112.vercel.app/" target="_blank">
+              <a href="https://yashmangal112.vercel.app/">
                 <BsInstagram className="w-18 h-8 hover:opacity-100 hover:transform- none animate-bounce " />
               </a>
             </div>

@@ -9,13 +9,15 @@ import TermsAndConditions from './components/TermsAndConditions';
 import TrackOrdersPage from './components/TrackOrdersPage';
 import About from './components/About';
 import Mockup from './components/Mockup';
+import Landingbanners from './components/Landingbanners';
 
 function App() {
   return (
     <Router>
       <Navbar/>
-      {/* <About/> */}
-      {/* <Mockup/> */}
+      <Landingbanners/>
+      <About/>
+      <Mockup/>
       {/* <ContactDetailsForm/> */}
       <Footer/>
       <Routes>

@@ -1,9 +1,44 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { AiOutlineArrowRight } from 'react-icons/ai';
 
+
 const navbar = () => {
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [scrolled, setScrolled] = useState(false);
+
+// eslint-disable-next-line react-hooks/rules-of-hooks
+useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll);
+
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
+
   return (
-    <nav className="bg-blue-500 p-4">
+    <nav
+    className={`p-2 fixed top-0 left-0 right-0 z-50 ${
+      scrolled
+        ? `
+          bg-white
+          text-black
+          shadow-md
+        `
+        : `
+          bg-white
+          text-black
+        `
+    }`}
+  >
         <div className="container mx-auto flex justify-between items-center">
           <img src="dummy-logo.png" alt="Logo" className="w-16 h-16" />
           <ul className="flex space-x-4">

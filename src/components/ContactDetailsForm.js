@@ -4,7 +4,7 @@ import Breadcrumb from '../components/Breadcrumb';
 const breadcrumbPaths = [{ label: 'Contact', url: '/contact' }];
 const ContactDetailsForm = () => {
   return (
-    <>
+    <div className='mt-[80px]'>
     <Breadcrumb paths={breadcrumbPaths} />
     <div className="bg-gray-100 py-10">
           <div className="container mx-auto px-4">
@@ -38,7 +38,7 @@ const ContactDetailsForm = () => {
                   </form>
               </div>
           </div>
-      </div></>
+      </div></div>
   )
 }
 

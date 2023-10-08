@@ -7,6 +7,7 @@ export const theme = {
     extend: {
         fontFamily: {
             montserrat: ['"Montserrat"', ..._fontFamily.sans],
+            inter: ['"Inter"', ..._fontFamily.sans],
             poppins: ['"Poppins"', ..._fontFamily.sans]
         }
     },

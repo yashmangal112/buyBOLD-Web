@@ -6,7 +6,7 @@ import { FcShipped } from "react-icons/fc";
 function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-8">
-      <div className="container mx-auto flex pl-[90px] pr-[60px] pt-[90px] pb-[90px] flex-col md:flex-row justify-between items-center">
+      <div className="container mx-auto flex pl-[90px] pr-[60px] pt-[90px] pb-[60px] flex-col md:flex-row justify-between items-center">
         <div className="flex w-1/3 p-2 items-center space-x-4 mb-4 md:mb-0">
           <img src="logo-3.png" alt="Footer Logo" className="filter drop-shadow-md" />
         </div>
